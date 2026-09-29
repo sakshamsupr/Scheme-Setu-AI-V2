@@ -1,0 +1,5 @@
+import { ArrowUpRight, BadgeCheck, IndianRupee } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import WhyThisScheme from './WhyThisScheme';
+import { useLanguage } from '../context/LanguageContext';
+export default function SchemeCard({scheme,compact=false}){const {t}=useLanguage();return <article className={`scheme-card ${compact?'compact':''}`}><div className="scheme-card-top"><span className="tag">{scheme.scheme_type||'Scheme'}</span>{scheme.eligible&&<span className="match-chip"><BadgeCheck size={14}/> {t('eligible')}</span>}</div><h3>{scheme.scheme_name}</h3><p>{scheme.description}</p><div className="scheme-metrics"><span><IndianRupee size={14}/>{Number(scheme.max_loan_inr||0).toLocaleString('en-IN')}</span><span>{scheme.max_subsidy_pct||0}% {t('subsidy')}</span><span>{scheme.tenure_years||'-'} yrs</span></div>{!compact&&<WhyThisScheme scheme={scheme}/>}<div className="scheme-actions"><Link className="btn btn-light" to={`/schemes/${scheme.scheme_id}`}>{t('view')} <ArrowUpRight size={15}/></Link>{scheme.apply_link&&<a className="text-link" href={scheme.apply_link} target="_blank" rel="noreferrer">{t('officialSource')} ↗</a>}</div></article>}

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "u-pmeg",
+    "type": "scheme",
+    "title": "PMEGP evidence source",
+    "message": "Official PMEGP success stories are linked under Why this scheme where relevant.",
+    "source": "https://kviconline.gov.in/pmegp/pmegpweb/docs/success_stories.pdf",
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "u-msme",
+    "type": "scheme",
+    "title": "NSSH evidence refresh",
+    "message": "Official MSME annual report evidence is available in the source-linked alert.",
+    "source": "https://www.msme.gov.in/sites/default/files/FINALMSMEANNUALREPORT2023-24ENGLISH.pdf",
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "u-roadmap",
+    "type": "application",
+    "title": "Roadmap ready",
+    "message": "Pick a scheme in Application Roadmap and mark steps complete as you progress.",
+    "target": "/roadmap",
+    "createdAt": "2026-09-29"
+  },
+  {
+    "id": "u-deadline",
+    "type": "deadline",
+    "title": "Deadline verification reminder",
+    "message": "Always verify the latest official application window before submitting.",
+    "target": "/schemes",
+    "createdAt": "2026-09-29"
+  }
+]
